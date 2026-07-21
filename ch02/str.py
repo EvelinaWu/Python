@@ -1,0 +1,6 @@
+print('Python')
+print("3.8")
+print("This's book.")
+print('"Hi"says Jacky')
+print(a[0])
+print(a[1])

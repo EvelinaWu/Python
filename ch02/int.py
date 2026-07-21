@@ -1,0 +1,6 @@
+print(12)
+print(0b1100)
+print(0o14)
+print(0xc)
+print(int(True))
+print(int(False))
