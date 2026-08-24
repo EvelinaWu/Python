@@ -1,0 +1,10 @@
+text = input("請輸入文章：")
+count = {}
+for char in text:
+    if char in count:
+        count[char] += 1
+    else:
+        count[char] = 1
+print("\n統計結果：")
+for char, number in count.items():
+    print(f"「{char}」使用{number}次")

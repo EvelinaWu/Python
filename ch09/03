@@ -1,0 +1,10 @@
+import random
+
+numbers = random.sample(range(1, 50), 7)
+
+numbers.sort()
+
+print("本期大樂透號碼：")
+
+for number in numbers:
+    print(number, end=" ")

@@ -1,0 +1,53 @@
+dictionary = {
+    "apple": "蘋果",
+    "book": "書",
+    "computer": "電腦"
+}
+
+while True:
+    print("\n===== 英漢字典 =====")
+    print("1. 新增或修改字典")
+    print("2. 刪除單字")
+    print("3. 單字查詢")
+    print("0. 結束程式")
+
+    choice = input("請輸入選項 0～3：")
+
+    # ① 新增 / 修改
+    if choice == "1":
+        word = input("請輸入英文單字：")
+        meaning = input("請輸入中文解釋：")
+
+        if word in dictionary:
+            dictionary[word] = meaning
+            print("已修改中文解釋！")
+        else:
+            dictionary[word] = meaning
+            print("已新增至字典！")
+
+    # ② 刪除
+    elif choice == "2":
+        word = input("請輸入要刪除的英文單字：")
+
+        if word in dictionary:
+            del dictionary[word]
+            print("刪除成功！")
+        else:
+            print("不存在字典中")
+
+    # ③ 查詢
+    elif choice == "3":
+        word = input("請輸入要查詢的英文單字：")
+
+        if word in dictionary:
+            print("中文解釋：", dictionary[word])
+        else:
+            print("不存在字典中")
+
+    # ⓪ 結束
+    elif choice == "0":
+        print("程式結束！")
+        break
+
+    else:
+        print("請輸入正確選項！")
