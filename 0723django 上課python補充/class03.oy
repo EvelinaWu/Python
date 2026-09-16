@@ -1,0 +1,4 @@
+class TaipeiBank:
+    def__ini__(self, balance=0)
+       set.bkance=0 
+    def print(f)
